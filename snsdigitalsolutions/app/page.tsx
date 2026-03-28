@@ -24,16 +24,28 @@ export default function Home() {
             </span>
           </a>
           <div className="hidden md:flex gap-8">
-            <a href="#services" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition">
+            <a
+              href="#services"
+              className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition"
+            >
               Services
             </a>
-            <a href="#portfolio" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition">
+            <a
+              href="#portfolio"
+              className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition"
+            >
               Portfolio
             </a>
-            <a href="#about" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition">
+            <a
+              href="#about"
+              className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition"
+            >
               About
             </a>
-            <a href="#contact" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition">
+            <a
+              href="#contact"
+              className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-medium transition"
+            >
               Contact
             </a>
           </div>
@@ -45,13 +57,16 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-6">
             <h1 className="text-6xl md:text-7xl font-bold leading-tight tracking-tight text-black dark:text-white">
-              Design that Elevates Your <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Brand</span>
+              Design that Elevates Your{' '}
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Brand
+              </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
               We create beautiful, responsive websites that engage users and drive real business results. Modern design meets strategic thinking.
             </p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a
               href="#contact"
@@ -86,35 +101,35 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Web Design",
-                description: "Beautiful, modern designs that reflect your brand identity and engage your audience.",
-                icon: "✨"
+                title: 'Web Design',
+                description: 'Beautiful, modern designs that reflect your brand identity and engage your audience.',
+                icon: '✨',
               },
               {
-                title: "Development",
-                description: "Fast, secure, and scalable websites built with the latest technologies and best practices.",
-                icon: "⚡"
+                title: 'Development',
+                description: 'Fast, secure, and scalable websites built with the latest technologies and best practices.',
+                icon: '⚡',
               },
               {
-                title: "Optimization",
-                description: "Improve performance, SEO, and user experience to maximize conversions and growth.",
-                icon: "🎯"
+                title: 'Optimization',
+                description: 'Improve performance, SEO, and user experience to maximize conversions and growth.',
+                icon: '🎯',
               },
               {
-                title: "E-Commerce",
-                description: "Complete e-commerce solutions with payment integration and inventory management.",
-                icon: "🛒"
+                title: 'E-Commerce',
+                description: 'Complete e-commerce solutions with payment integration and inventory management.',
+                icon: '🛒',
               },
               {
-                title: "Mobile Apps",
-                description: "Native and cross-platform mobile applications that delight users.",
-                icon: "📱"
+                title: 'Mobile Apps',
+                description: 'Native and cross-platform mobile applications that delight users.',
+                icon: '📱',
               },
               {
-                title: "Maintenance",
-                description: "Ongoing support, updates, and optimization to keep your site running smoothly.",
-                icon: "🔧"
-              }
+                title: 'Maintenance',
+                description: 'Ongoing support, updates, and optimization to keep your site running smoothly.',
+                icon: '🔧',
+              },
             ].map((service, index) => (
               <div
                 key={index}
@@ -128,7 +143,13 @@ export default function Home() {
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className={hoveredService === index ? 'text-gray-100 dark:text-gray-900' : 'text-gray-600 dark:text-gray-400'}>
+                <p
+                  className={
+                    hoveredService === index
+                      ? 'text-gray-100 dark:text-gray-900'
+                      : 'text-gray-600 dark:text-gray-400'
+                  }
+                >
                   {service.description}
                 </p>
               </div>
@@ -150,33 +171,33 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                title: "TechStart Hub",
-                category: "SaaS Platform",
-                description: "A comprehensive project management tool with real-time collaboration features.",
-                image: "https://images.unsplash.com/photo-1627873649417-af36d7c7a052?w=600&h=400&fit=crop",
-                url: "https://techstart-hub.com"
+                title: 'TechStart Hub',
+                category: 'SaaS Platform',
+                description: 'A comprehensive project management tool with real-time collaboration features.',
+                image: 'https://images.unsplash.com/photo-1627873649417-af36d7c7a052?w=600&h=400&fit=crop',
+                url: 'https://techstart-hub.com',
               },
               {
-                title: "Fashion Forward",
-                category: "E-Commerce",
-                description: "Modern fashion e-commerce platform with personalized recommendations.",
-                image: "/artwork.png",
-                url: "https://kalagallery.vercel.app/"
+                title: 'Fashion Forward',
+                category: 'E-Commerce',
+                description: 'Modern fashion e-commerce platform with personalized recommendations.',
+                image: '/artwork.png',
+                url: 'https://kalagallery.vercel.app/',
               },
               {
-                title: "Wellness Co",
-                category: "Corporate",
-                description: "Clean corporate website for a wellness and fitness company.",
-                image: "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=600&h=400&fit=crop",
-                url: "https://wellness-co.com"
+                title: 'Wellness Co',
+                category: 'Corporate',
+                description: 'Clean corporate website for a wellness and fitness company.',
+                image: 'https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=600&h=400&fit=crop',
+                url: 'https://wellness-co.com',
               },
               {
-                title: "Digital Magazine",
-                category: "Media",
-                description: "Interactive digital magazine with engaging multimedia content.",
-                image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
-                url: "https://digital-magazine.com"
-              }
+                title: 'Digital Magazine',
+                category: 'Media',
+                description: 'Interactive digital magazine with engaging multimedia content.',
+                image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop',
+                url: 'https://digital-magazine.com',
+              },
             ].map((project, index) => (
               <a
                 key={index}
@@ -194,12 +215,170 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6 border border-t-0 border-gray-200 dark:border-gray-800">
-                  <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">{project.category}</p>
+                  <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                    {project.category}
+                  </p>
                   <h3 className="text-2xl font-bold text-black dark:text-white mt-2 mb-3">{project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
                 </div>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-24 px-6 bg-gray-50 dark:bg-gray-950">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white">Simple, Transparent Pricing</h2>
+            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+              Choose a plan that fits your goals. Both plans include SEO and a polished, modern UI.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+            {/* Basic Plan */}
+            <div className="relative rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 overflow-hidden">
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-600 to-purple-600" />
+
+              <div className="p-8 md:p-10">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-black dark:text-white">Basic Website</h3>
+                    <p className="text-gray-600 dark:text-gray-400 mt-2">
+                      Perfect for startups, portfolios, and local businesses.
+                    </p>
+                  </div>
+
+                  <span className="shrink-0 inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 px-3 py-1 text-sm font-semibold border border-blue-200/60 dark:border-blue-900">
+                    Most Popular
+                  </span>
+                </div>
+
+                <div className="mt-8 flex items-end gap-3">
+                  <div className="text-5xl font-extrabold tracking-tight text-black dark:text-white">
+                    ₹6,000
+                  </div>
+                  <div className="pb-1">
+                    <div className="text-sm text-gray-500 dark:text-gray-400 line-through">₹12,000</div>
+                    <div className="text-sm font-semibold text-green-600 dark:text-green-400">50% OFF</div>
+                  </div>
+                </div>
+
+                <div className="mt-8 space-y-3">
+                  {[
+                    'Up to 10 pages website development',
+                    '1 year domain + hosting FREE',
+                    'SEO included (basic on-page setup)',
+                    'Mobile-first responsive design',
+                    'Fast loading + performance optimization',
+                    'Contact form integration',
+                    'WhatsApp/Call CTA integration',
+                    'Basic security hardening (HTTPS-ready)',
+                  ].map((feature) => (
+                    <div key={feature} className="flex gap-3 items-start">
+                      <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/40">
+                        <span className="h-2 w-2 rounded-full bg-green-600 dark:bg-green-400" />
+                      </span>
+                      <p className="text-gray-700 dark:text-gray-300">{feature}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                  <a
+                    href=""
+                    className="inline-flex items-center justify-center px-6 py-4 rounded-xl bg-black dark:bg-white text-white dark:text-black font-semibold hover:shadow-lg hover:scale-[1.02] transition-all duration-300 w-full"
+                  >
+                    Buy Basic Plan
+                  </a>
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center justify-center px-6 py-4 rounded-xl border-2 border-gray-300 dark:border-gray-700 text-black dark:text-white font-semibold hover:border-black dark:hover:border-white transition-all duration-300 w-full"
+                  >
+                    Talk to Us
+                  </a>
+                </div>
+
+                <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
+                  Delivery timeline depends on content readiness (text/images). We’ll guide you end-to-end.
+                </p>
+              </div>
+            </div>
+
+            {/* E-Commerce Plan (Featured) */}
+            <div className="relative rounded-2xl overflow-hidden">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-100 blur-sm" />
+              <div className="relative rounded-2xl border border-gray-200/40 dark:border-gray-800/60 bg-black text-white dark:bg-white dark:text-black">
+                <div className="p-8 md:p-10">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-2xl font-bold">E-Commerce Pro</h3>
+                      <p className="mt-2 text-white/75 dark:text-black/70">
+                        For brands ready to sell online with a complete store experience.
+                      </p>
+                    </div>
+                    <span className="shrink-0 inline-flex items-center rounded-full bg-white/10 dark:bg-black/10 px-3 py-1 text-sm font-semibold border border-white/20 dark:border-black/20">
+                      Best Value
+                    </span>
+                  </div>
+
+                  <div className="mt-8 flex items-end gap-3">
+                    <div className="text-5xl font-extrabold tracking-tight">
+                      ₹12,500
+                    </div>
+                    <div className="pb-1">
+                      <div className="text-sm text-white/70 dark:text-black/60 line-through">₹25,000</div>
+                      <div className="text-sm font-semibold text-green-300 dark:text-green-700">50% OFF</div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 space-y-3">
+                    {[
+                      'Full e-commerce website development',
+                      'Admin panel to manage products, orders & customers',
+                      'Payment gateway integration included',
+                      'SEO included (on-page essentials)',
+                      'Product categories, filters & search',
+                      'Order notifications + invoice-ready flow',
+                      'Speed & conversion optimized UI',
+                      'Security best practices + role-based admin access',
+                    ].map((feature) => (
+                      <div key={feature} className="flex gap-3 items-start">
+                        <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/15 dark:bg-black/10">
+                          <span className="h-2 w-2 rounded-full bg-white dark:bg-black" />
+                        </span>
+                        <p className="text-white/90 dark:text-black/80">{feature}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a
+                      href=""
+                      className="inline-flex items-center justify-center px-6 py-4 rounded-xl bg-white text-black dark:bg-black dark:text-white font-semibold hover:shadow-lg hover:scale-[1.02] transition-all duration-300 w-full"
+                    >
+                      Buy E-Commerce Plan
+                    </a>
+                    <a
+                      href="#contact"
+                      className="inline-flex items-center justify-center px-6 py-4 rounded-xl border-2 border-white/40 dark:border-black/30 text-white dark:text-black font-semibold hover:border-white dark:hover:border-black transition-all duration-300 w-full"
+                    >
+                      Request a Call
+                    </a>
+                  </div>
+
+                  <p className="mt-6 text-sm text-white/70 dark:text-black/60">
+                    Need custom features (shipping APIs, multi-vendor, GST invoice, etc.)? We can scale this plan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center text-sm text-gray-500 dark:text-gray-400">
+            By purchasing, you agree to share necessary content/assets for timely delivery.
           </div>
         </div>
       </section>
@@ -231,12 +410,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative w-full h-96 rounded-lg overflow-hidden">
-              <Image
-                src="/logo.png"
-                alt="SNS Digital Solutions Logo"
-                fill
-                className="object-contain p-8"
-              />
+              <Image src="/logo.png" alt="SNS Digital Solutions Logo" fill className="object-contain p-8" />
             </div>
           </div>
         </div>
@@ -287,9 +461,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-gray-200 dark:border-gray-800 py-8 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 dark:text-gray-400 text-sm">
-            © 2026 S&S Digital Solutions. All rights reserved.
-          </p>
+          <p className="text-gray-600 dark:text-gray-400 text-sm">© 2026 S&S Digital Solutions. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition text-sm font-medium">
               Privacy
