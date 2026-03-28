@@ -356,7 +356,7 @@ export default function Home() {
 
                   <div className="mt-10 flex flex-col sm:flex-row gap-4">
                     <a
-                      href=""
+                      href="https://rzp.io/rzp/jEP8NZ6S"
                       className="inline-flex items-center justify-center px-6 py-4 rounded-xl bg-white text-black dark:bg-black dark:text-white font-semibold hover:shadow-lg hover:scale-[1.02] transition-all duration-300 w-full"
                     >
                       Buy E-Commerce Plan
