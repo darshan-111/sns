@@ -13,6 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+     icon: "/icon.png",
+  },
   title: "SNS Digital Solutions | Web Design & Development",
   description: "Premium web design and development services for modern businesses. We create stunning, responsive websites that convert.",
 };
