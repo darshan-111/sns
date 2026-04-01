@@ -171,11 +171,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                title: 'TechStart Hub',
-                category: 'SaaS Platform',
-                description: 'A comprehensive project management tool with real-time collaboration features.',
-                image: 'https://images.unsplash.com/photo-1627873649417-af36d7c7a052?w=600&h=400&fit=crop',
-                url: 'https://techstart-hub.com',
+                title: 'PreSchool',
+                category: 'Education',
+                description: 'Website for a preschool aimed for generating maximum leads for admissions.',
+                image: '/preschool.png',
+                url: 'https://indorepreschool.vercel.app/',
               },
               {
                 title: 'Fashion Forward',
